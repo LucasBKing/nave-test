@@ -1,0 +1,19 @@
+html, body {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+
+.Title{
+  width: 289px;
+  height: 37px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal ;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6c6c6c;
+  margin-left: 21.6px;
+}
