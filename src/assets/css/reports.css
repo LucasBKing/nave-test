@@ -1,0 +1,50 @@
+.cardCustom {
+    width: 312px !important;
+    
+    margin-top: 28px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5) !important;
+    border: none !important;
+    background-color: #ffffff;
+}
+
+.reportsTitle {
+    width: 270px;
+    height: 23.1px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6c6c6c !important;
+    margin-top: -10px !important;  
+  }
+
+.customSubmitForm {
+    margin-top: -10px !important;
+    margin-bottom: -20px !important;
+}
+
+.customSubmitForm button {
+    background-color: white !important;
+    color: #4c84ff !important;
+    font-weight: bold !important;
+}
+
+.customSubmitForm button:hover {
+  color: #000080 !important;
+}
+
+.customSubmitForm input {
+    width: 100% !important;
+    background-color: white !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    margin-right: 30px !important;
+}
+
+.hiddenContent {
+    overflow-y: scroll;
+}

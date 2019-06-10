@@ -32,7 +32,7 @@ export default class TrafficGraph extends Component {
             <div className="trafficDiv">
                 <h3>Site Traffic Overview</h3>
                 <BarChart
-                    width={645}
+                    width={644}
                     height={373}
                     data={trafficData}
                     margin={{
