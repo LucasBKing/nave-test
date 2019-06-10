@@ -19,6 +19,11 @@
     align-items: center;
 }
 
+#visitorsRect {
+    margin-left: 16px;
+}
+
+
 .rectContent {
     color: white;
     display: flex;
@@ -35,4 +40,54 @@
 
 .rectContent p {
     margin-top: 0%;
+}
+
+@media screen and (max-width:990px) {
+    .rectangle {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .flexRectangles {
+        flex-flow: wrap;
+    }
+    
+    .rectangle {
+        width: 330px;
+    }
+
+    #salesRect {
+        margin-top: 15px;
+        margin-left: 12.5px;
+    }
+
+    #orderRect {
+        margin-top: 15px;
+    }
+
+    #visitorsRect {
+        margin-left: 12.5px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .rectangle {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .rectangle {
+        width: 288px;
+    }
+
+    #usersRect {
+        margin-top: 15px;
+        margin-left: 12.5px;
+    }
+
+    #orderRect {
+        margin-left: 12.5px;
+    }
 }
