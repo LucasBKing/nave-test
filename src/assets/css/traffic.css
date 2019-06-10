@@ -1,0 +1,29 @@
+.trafficDiv {
+    width: 644px;
+    height: 438px;
+    border-radius: 15px;
+    margin-left: 22.66px;
+    margin-top: 28px;
+    padding-top: 3px;
+    box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+    background-color: #ffffff;
+}
+
+.trafficDiv h3 {
+    width: 270px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6c6c6c;
+    margin-left: 19px;
+}
+
+.barcharGraph {
+    width: 645px;
+    height: 373px;
+}
