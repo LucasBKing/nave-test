@@ -8,7 +8,7 @@ import './assets/css/App.css';
 function App() {
   return (
     <Container>
-      <h1 className="Title">Page Overview</h1>
+      <h1 className="Title">Page Overview</h1>      
       <Information />
       <div className="otherInfo">
         

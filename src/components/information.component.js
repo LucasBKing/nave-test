@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import { Container, Col } from 'react-bootstrap';
 import { faEye, faUsers, faDollarSign, faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getInformation } from '../functions/information';
-
+import { Container, Col } from 'react-bootstrap';
 import '../assets/css/info.css';
 
 var bgColors = { "Visitors": "#29cb97",
                 "Users": "#FCC200",
                 "Sales": "#4c84ff",
-                "Orders": "#ca66ff",
-
+                "Orders": "#ca66ff"
 };
 
 export default class Information extends Component {
@@ -35,6 +32,7 @@ export default class Information extends Component {
         const { information } = this.state;
         return(
             <Container className="flexRectangles">
+                
                 <Col lg={3} md={6} sm={12}>
                     <div className="rectangle" id="visitorsRect" style={{ backgroundColor: bgColors.Visitors }}>
                         <div>

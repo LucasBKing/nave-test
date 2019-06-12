@@ -84,6 +84,13 @@
       "message": "New message from here2",
       "time": "5 minutes ago",
       "id": 7
+    },
+    {
+      "user": "John Doe",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+      "message": "polpokpoik",
+      "time": "5 minutes ago",
+      "id": 8
     }
   ]
 }

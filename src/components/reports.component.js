@@ -13,7 +13,7 @@ export default class Reports extends Component {
             newMessage: ''
         }
     }
-
+    
     componentDidMount() {
         getReports().then(res => {
             this.setState({

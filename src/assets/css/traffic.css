@@ -6,6 +6,8 @@
     padding-top: 3px;
     box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
     background-color: #ffffff;
+    margin-right: 15px;
+    
 }
 
 .trafficDiv h3 {
@@ -21,4 +23,36 @@
     color: #6c6c6c;
     margin-left: 19px;
     margin-top: 17px !important;
+}
+
+@media screen and (max-width:990px) {
+    .trafficDiv {
+        width: 410px !important;
+        margin-right: 30px;
+ 
+    }
+}
+
+@media screen and (max-width:880px) {
+    .trafficDiv {
+        width: 330px !important;
+        height: 300px;
+        margin-right: 20px;
+        
+    }
+}
+
+@media screen and (max-width:719px) {
+    .trafficDiv {
+        width: 250px !important;
+        margin-right: 20px;
+        
+    }
+}
+@media screen and (max-width:559px) {
+    .trafficDiv {
+        width: 290px !important;
+        margin-left: 10px !important;
+        
+    }
 }
