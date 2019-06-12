@@ -23,7 +23,7 @@ $ ~/path/to/folder/nave-test: npm install
 
 ### Inicializando
 
-Com as dependências instalas, inicialize o json-server em uma porta diferente da deafult, pois o react também utiliza a porta 3000:
+Com as dependências instaladas, inicialize o json-server em uma porta diferente da deafult, pois o React também utiliza a porta 3000:
 
 ```
 $ ~/path/to/folder/nave-test/src/models: json-server --watch db.json --port 3001
