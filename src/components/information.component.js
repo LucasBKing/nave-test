@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { faEye, faUsers, faDollarSign, faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getInformation } from '../functions/information';
-import { Container, Col } from 'react-bootstrap';
 import '../assets/css/info.css';
 
 var bgColors = { "Visitors": "#29cb97",
@@ -24,9 +23,8 @@ export default function Information() {
 
  
     return(
-        <Container className="flexRectangles">
-            
-            <Col lg={3} md={6} sm={12}>
+        <div className="flexRectangles">
+            <>
                 <div className="rectangle" id="visitorsRect" style={{ backgroundColor: bgColors.Visitors }}>
                     <div>
                         <FontAwesomeIcon
@@ -43,8 +41,8 @@ export default function Information() {
                     </div>
                     
                 </div>
-            </Col>
-            <Col lg={3} md={6} sm={12}>
+            </>
+            <>
                 <div className="rectangle" id="usersRect" style={{ backgroundColor: bgColors.Users }}>
                     <div>
                         <FontAwesomeIcon
@@ -60,8 +58,8 @@ export default function Information() {
                         </p>
                     </div>
                 </div>
-            </Col>
-            <Col lg={3} md={6} sm={12}>
+            </>
+            <>
                 <div className="rectangle" id="salesRect" style={{ backgroundColor: bgColors.Sales }}>
                     <div>
                         <FontAwesomeIcon
@@ -77,8 +75,8 @@ export default function Information() {
                         </p>
                     </div>
                 </div>
-            </Col>
-            <Col lg={3} md={6} sm={12}>
+            </>
+            <>
                 <div className="rectangle" id="orderRect" style={{ backgroundColor: bgColors.Orders }}>
                     <div>
                         <FontAwesomeIcon
@@ -94,10 +92,8 @@ export default function Information() {
                         </p>
                     </div>
                 </div>
-            </Col>
-            
-            
-        </Container>
+            </>
+        </div>
     )
     
 

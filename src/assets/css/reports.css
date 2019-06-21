@@ -78,7 +78,7 @@
     
     .customSubmitForm input {
         width: 100% !important;
-        margin-right: 20px !important;
+        margin-right: 5px !important;
     }
 }
 
@@ -89,7 +89,7 @@
 
     .customSubmitForm input {
         width: 80% !important;
-        margin-right: -65px !important;
+        margin-right: -75px !important;
     }
 }
 
@@ -103,6 +103,6 @@
 
     .customSubmitForm input {
         width: 100% !important;
-        margin-right: -15px !important;
+        margin-right: -32px !important;
     }
 }

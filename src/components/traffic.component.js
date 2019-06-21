@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import useWindowSize from './dimensions';
+import useWindowSize from '../functions/dimensions';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import { getSales } from '../functions/traffic';
 import '../assets/css/traffic.css'

@@ -6,7 +6,7 @@ import '../assets/css/reports.css'
 
 export default function Reports() {
     const [reports, setReports] = useState([]);
-    const [newMessage, setNewMessage] = useState([]);
+    const [newMessage, setNewMessage] = useState("");
 
     useEffect(() => {
         async function fetchReports() {
@@ -15,6 +15,9 @@ export default function Reports() {
         }     
 
         fetchReports();
+        // Scrolling div to bottom with js
+        var cardObj = document.getElementById("reportsCard");
+        cardObj.scrollTop = cardObj.scrollHeight;
 
     }, [reports]);
 
@@ -23,13 +26,14 @@ export default function Reports() {
         
         async function postReport() {
             const response = await postNewReport(newMessage);
-            alert(response);
+            alert("Message sent!");
+            setNewMessage("");
         }
 
-        if(newMessage.length < 1)
+        if(newMessage.length < 1) 
             alert("Incorret input");        
         else 
-            postReport();
+            postReport();        
     }
 
     return (
@@ -41,11 +45,10 @@ export default function Reports() {
                     </h3>
                 </Card.Header>
             </Card.Content>
-            <Card.Content className="hiddenContent" style={{ height: 340 }}>
+            <Card.Content id="reportsCard" className="hiddenContent" style={{ height: 340 }}>
                 { reports.map(reports => (
-                    <Feed  key={reports.id}>
+                    <Feed key={reports.id}>
                         <Feed.Event>
-                            
                             <Feed.Label style={{ marginTop: 5 }} image={reports.image} />
                             <Feed.Content>
                                 <Feed.Summary>{reports.user}</Feed.Summary>
@@ -66,7 +69,7 @@ export default function Reports() {
             <Card.Content>
                 <Form className="customSubmitForm" onSubmit={handleSubmit}>
                     <Form.Group>
-                        <Form.Input placeholder='Type your comment here...' id='newMessage' onChange={e => setNewMessage(e.target.value)} />
+                        <Form.Input placeholder='Type your comment here...' value={newMessage} id='newMessage' onChange={e => setNewMessage(e.target.value)} />
                         <Form.Button type="submit" content='SEND' />
                     </Form.Group>
                 </Form>
