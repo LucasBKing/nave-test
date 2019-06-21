@@ -14,27 +14,38 @@ export default function TrafficGraph() {
             const response = await getSales();
             setTrafficData(response);
         }
-
         fetchData();        
     }, []);
   
     return (
-        <div className="trafficDiv">
+        <div 
+            className={`trafficDiv`}
+        >
             <h3>Site Traffic Overview</h3>
             <BarChart
                 width={windowSize.width}
                 height={windowSize.height}
                 data={trafficData}
                 margin={{
-                    top: 5, right: 30, left: 5, bottom: 5,
+                    top: 5, 
+                    right: 30, 
+                    left: 5, 
+                    bottom: 5
                 }}
             >
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid 
+                    strokeDasharray={`3 3`}
+                />
 
-                <XAxis dataKey="month" />
+                <XAxis 
+                    dataKey={`month`} 
+                />
                 <YAxis />
                 <Tooltip />
-                <Bar dataKey="sales" fill="#4c84ff" />   
+                <Bar 
+                    dataKey={`sales`} 
+                    fill={`#4c84ff`} 
+                />   
             </BarChart>
         </div>
     );

@@ -4,11 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getInformation } from '../functions/information';
 import '../assets/css/info.css';
 
-var bgColors = { "Visitors": "#29cb97",
-                "Users": "#FCC200",
-                "Sales": "#4c84ff",
-                "Orders": "#ca66ff"
-};
+var bgColors = { Visitors: "#29cb97", Users: "#FCC200", Sales: "#4c84ff", Orders: "#ca66ff"};
 
 export default function Information() {
     const [information, setInformation] = useState([]);
@@ -23,9 +19,15 @@ export default function Information() {
 
  
     return(
-        <div className="flexRectangles">
+        <div 
+            className="flexRectangles"
+        >
             <>
-                <div className="rectangle" id="visitorsRect" style={{ backgroundColor: bgColors.Visitors }}>
+                <div 
+                    className={`rectangle visitorsRect`} 
+                    id="" 
+                    style={{ backgroundColor: bgColors.Visitors }}
+                >
                     <div>
                         <FontAwesomeIcon
                             size= "3x"
@@ -33,7 +35,9 @@ export default function Information() {
                             style={{ color: 'white' }}
                         />
                     </div>
-                    <div className="rectContent">
+                    <div 
+                        className={`rectContent`}
+                    >
                         <h2>{information.visitors}</h2>
                         <p>
                             Visitors
@@ -43,7 +47,10 @@ export default function Information() {
                 </div>
             </>
             <>
-                <div className="rectangle" id="usersRect" style={{ backgroundColor: bgColors.Users }}>
+                <div 
+                    className={`rectangle usersRect`} 
+                    style={{ backgroundColor: bgColors.Users  }}
+                >
                     <div>
                         <FontAwesomeIcon
                             size= "3x"
@@ -51,7 +58,9 @@ export default function Information() {
                             style={{ color: 'white' }}
                         />
                     </div>
-                    <div className="rectContent">
+                    <div 
+                        className={`rectContent`}
+                    >
                         <h2>{information.users}</h2>
                         <p>
                             Users
@@ -60,7 +69,10 @@ export default function Information() {
                 </div>
             </>
             <>
-                <div className="rectangle" id="salesRect" style={{ backgroundColor: bgColors.Sales }}>
+                <div 
+                    className={`rectangle salesRect`} 
+                    style={{ backgroundColor: bgColors.Sales }}
+                >
                     <div>
                         <FontAwesomeIcon
                             size= "3x"
@@ -68,7 +80,9 @@ export default function Information() {
                             style={{ color: 'white' }}
                         />
                     </div>
-                    <div className="rectContent">
+                    <div 
+                        className={`rectContent`}
+                    >
                         <h2>{information.sales}</h2>
                         <p>
                             Sales
@@ -77,7 +91,10 @@ export default function Information() {
                 </div>
             </>
             <>
-                <div className="rectangle" id="orderRect" style={{ backgroundColor: bgColors.Orders }}>
+                <div 
+                    className={`rectangle orderRect`} 
+                    style={{ backgroundColor: bgColors.Orders }}
+                >
                     <div>
                         <FontAwesomeIcon
                             size= "3x"
@@ -85,7 +102,9 @@ export default function Information() {
                             style={{ color: 'white' }}
                         />
                     </div>
-                    <div className="rectContent">
+                    <div 
+                        className={`rectContent`}
+                    >
                         <h2>{information.orders}</h2>
                         <p>
                             Orders

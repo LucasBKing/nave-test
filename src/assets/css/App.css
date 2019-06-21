@@ -1,12 +1,11 @@
 html, body {
   max-width: 1024px;
   margin: 0 auto;
-  height: auto !important;
-  background-color: #f4f4f4 !important;
+  height: auto;
+  background-color: #f4f4f4;
 }
 
-.Title{
-
+.title{
   font-family: 'Roboto', sans-serif;
   font-size: 34px;
   font-weight: 500;
@@ -17,9 +16,9 @@ html, body {
   color: #6c6c6c;
   display: flex;
   justify-content: center;
-  
-  margin-bottom: 10px !important;
-  margin-top: 10px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f4f4f4;
 }
 
 .otherInfo {
@@ -28,12 +27,12 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-content: space-between;
+  background-color: #f4f4f4;
 }
 
 @media screen and (max-width:559px) {
-  .Title {
-    height: 23px !important;
-    font-size: 20px !important;
-    
+  .title {
+    height: 23px;
+    font-size: 20px;  
   }
 }

@@ -4,21 +4,33 @@ import TrafficGraph from './components/traffic.component';
 import Reports from './components/reports.component';
 import './assets/css/App.css';
 
-function App() {
+export default function App() {
   return (
     <div>
-      <h1 className="Title">Page Overview</h1>      
+      <div 
+        className={`title`}
+      >
+        Page Overview
+      </div>      
       <Information />
-      <div className="otherInfo">
-        <div col-lg-7 col-md-6 col-sm>
+      <div 
+        className={`otherInfo`}
+      >
+        <div 
+          col-lg-7="true"
+          col-md-6="true"
+          col-sm="true"
+        >
           <TrafficGraph />
         </div>
-        <div col-lg-5 col-md-6 col-sm>
+        <div 
+          col-lg-5="true" 
+          col-md-6="true"
+          col-sm="true"
+        >
           <Reports />
         </div>
       </div>
     </div>
   );
 }
-
-export default App;

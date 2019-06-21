@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
+    background-color: #f4f4f4;
 }
 
 .rectangle {
@@ -18,10 +19,9 @@
     align-items: center;
 }
 
-#visitorsRect {
+.visitorsRect {
     margin-left: 16px;
 }
-
 
 .rectContent {
     color: white;
@@ -56,16 +56,16 @@
         width: 330px;
     }
 
-    #salesRect {
+    .salesRect {
         margin-top: 15px;
         margin-left: 12.5px;
     }
 
-    #orderRect {
+    .orderRect {
         margin-top: 15px;
     }
 
-    #visitorsRect {
+    .visitorsRect {
         margin-left: 12.5px;
     }
 }
@@ -77,16 +77,19 @@
 }
 
 @media screen and (max-width: 559px) {
+    .flexRectangles {
+        padding-top: 20px;
+    }
     .rectangle {
         width: 288px;
     }
 
-    #usersRect {
+    .usersRect {
         margin-top: 15px;
         margin-left: 12.5px;
     }
 
-    #orderRect {
+    .orderRect {
         margin-left: 12.5px;
     }
 }
